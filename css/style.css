@@ -1,0 +1,193 @@
+/*formateo general*/
+*{
+    margin: 0;
+    padding: 0;  
+}
+/*Fin de Formateo General*/
+/*Inicio de Portada*/
+
+header nav {
+    height: 60px;
+}
+#div-portada {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url("../img/TRBbGNE.jpg");
+    background-size: cover;
+    background-position: center;   
+}
+h1 {
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0);
+    size: 0,1px;
+}
+
+#subtitulo {
+    margin-top: 450px;
+    margin-left: 20px;
+    font-family: 'News Cycle', sans-serif;
+    font-family: 'Newsreader', serif;
+    font-size: 60px;
+    width: fit-content;
+    color: #1F1A50;
+}
+#subtitulo-2 {
+    margin-top: 20px;
+    margin-left: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    width: fit-content;
+    color: #1d598d;
+    animation-name: Efecto-subtitulo;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes Efecto-subtitulo { /*Efecto de opacidad*/
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;    
+    }
+}
+/*Fin de Portada*/
+
+/* Segunda seccion -nuestros videojuegos-*/
+#seccion-videojuegos{
+    background-color: rgb(27, 26, 26);
+    background-image: linear-gradient(to top, rgb(27, 26, 26), rgba(0, 0, 0, 0.651));
+}
+
+h2 {
+    font-size: 30PX;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 40px;
+}
+.img-videojuegos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*Fin de la segunda seccion -nuestros videojuegos-*/
+
+/*Inicio de la Tercera seccion -empleo-*/
+#seccion-empleo {
+    background-color: rgb(27, 26, 26);
+}
+
+h3 {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(60, 173, 207);
+}
+p {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;   
+}
+
+/* Fin de la Tercer seccion -empleo*/
+
+/*Inicio del Footer*/
+footer {
+    background-color: rgb(27, 26, 26);
+}
+
+#img-redes {
+    width: 125px;
+    height: 125px;
+    padding: 20px;
+}
+#h2-redes {
+    color: rgb(60, 173, 207);
+}
+/*Fin de Footer*/
+
+/*Formulario de contacto*/
+.body-form {
+    background-image: url("../img/Portada-con-fuera-de-foco.jpg");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;  
+    margin: 0;
+}
+.div-form {
+    margin-top: 100px;
+    width: 500px;
+}
+
+/*----------Full Responsive--------*/
+
+@media screen and (max-width: 750px){
+
+
+    #subtitulo {
+        font-family: 'News Cycle', sans-serif;
+        font-family: 'Newsreader', serif;
+        font-size: 30px;
+        color: #1F1A50;
+    }
+    #subtitulo-2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: #1d598d;
+        margin-left: 40px;
+    }
+    .galeria { /*Grilla con Imagenes*/
+        display: grid;
+        grid-template-areas: 
+                "a a"
+                "b b"
+                "c d"
+                "e f"
+                "g h";
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #subtitulo {
+        font-family: 'News Cycle', sans-serif;
+        font-family: 'Newsreader', serif;
+        font-size: 25px;
+        color: #1F1A50;
+    }
+    #subtitulo-2 {
+        display: flex;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10px;
+        color: #1d598d;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 365px){
+
+    .galeria { /*Grilla con Imagenes*/
+        display: grid;
+        grid-template-areas: 
+                "a" "b" "c" "d" "f" "g" "h";
+        border-radius: 30px;
+    }
+
+    .odisea-espacial {
+        font-family: 'News Cycle', sans-serif;
+        font-family: 'Newsreader', serif;
+        font-size: 20px;
+        color: #1F1A50;
+        width: fit-content;
+    }
+    .odisea-espacial2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1Opx;
+        color: #1d598d;
+        width: fit-content;
+    }
+}
+
+
